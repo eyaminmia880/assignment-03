@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03</title>
+    <!-- Tailwind and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Font awesome icon -->
+    <script src="https://kit.fontawesome.com/7fd0999036.js" crossorigin="anonymous"></script>
+
+    <style>
+        @layer utilities {
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+        .text-primary{
+            background-color: rgb(171, 239, 95);
+        }
+    }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <header class="bg-gradient-to-r from-slate-100 to-slate-50 ">
+        <div class="navbar bg-gradient-to-r from-slate-100 to-slate-50 md:px-32">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Contact Us</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li><i class="fa-solid fa-business-time"></i></li>
+                </div>
+                <a class="text-xl font-bold text-blue-950"><i class="fa-solid fa-arrow-right text-primary text-black -rotate-45 rounded-full "></i>Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex gap-4 text-gray-500">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a><span class="font-bold text-gray-700">Home</span></a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Blogs</a></li>
+                </ul>
+                <div class="space-x-4">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-business-time"></i>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-primary font-bold text-xl text-black rounded-full">Book Consult<i class="fa-solid fa-arrow-right rounded-full bg-black text-white -rotate-45"></i></a>
+            </div>
+        </div>
+        <!-- Banner section -->
+         <section class="text-center py-10 px-5 md:px-20">
+            <img class="mx-auto mb-4" src="./assets/banner.png" alt="">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">A barn house of this design has a <br> striking appearance</h1>
+            <p class="text-gray-500 md:px-50 mb-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="btn text-primary opacity-80 text-black font-bold text-xl rounded-full">View Details<i class="fa-solid fa-arrow-right text-primary text-black -rotate-45 rounded-full "></i></button>
+         </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
