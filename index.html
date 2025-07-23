@@ -19,18 +19,19 @@
 
     <style>
         @layer utilities {
-        .font-manrope {
-            font-family: "Manrope", sans-serif;
+            .font-manrope {
+                font-family: "Manrope", sans-serif;
+            }
+
+            .text-primary {
+                background-color: rgb(171, 239, 95);
+            }
         }
-        .text-primary{
-            background-color: rgb(171, 239, 95);
-        }
-    }
     </style>
 </head>
 
 <body class="font-manrope">
-    <header class="bg-gradient-to-r from-slate-100 to-slate-50 ">
+    <header class="bg-gradient-to-r from-slate-100 to-slate-50">
         <div class="navbar bg-gradient-to-r from-slate-100 to-slate-50 md:px-32">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -51,7 +52,8 @@
                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
                         <li><i class="fa-solid fa-business-time"></i></li>
                 </div>
-                <a class="text-xl font-bold text-blue-950"><i class="fa-solid fa-arrow-right text-primary text-black -rotate-45 rounded-full "></i>Rinterio</a>
+                <a class="text-xl font-bold text-blue-950 "><i
+                        class="fa-solid fa-arrow-right text-primary text-black -rotate-45 rounded-full"></i>Rinterio</a>
             </div>
             <div class="navbar-center hidden lg:flex gap-4 text-gray-500">
                 <ul class="menu menu-horizontal px-1">
@@ -67,19 +69,60 @@
                 </div>
             </div>
             <div class="navbar-end">
-                <a class="btn text-primary font-bold text-xl text-black rounded-full">Book Consult<i class="fa-solid fa-arrow-right rounded-full bg-black text-white -rotate-45"></i></a>
+                <a class="btn text-primary font-bold text-xl text-black rounded-full">Book Consult<i
+                        class="fa-solid fa-arrow-right rounded-full bg-black text-white -rotate-45"></i></a>
             </div>
         </div>
         <!-- Banner section -->
-         <section class="text-center py-10 px-5 md:px-20">
+        <section class="text-center py-10 px-5 md:px-20">
             <img class="mx-auto mb-4" src="./assets/banner.png" alt="">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">A barn house of this design has a <br> striking appearance</h1>
-            <p class="text-gray-500 md:px-50 mb-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-            <button class="btn text-primary opacity-80 text-black font-bold text-xl rounded-full">View Details<i class="fa-solid fa-arrow-right text-primary text-black -rotate-45 rounded-full "></i></button>
-         </section>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">A barn house of this design has a <br> striking appearance
+            </h1>
+            <p class="text-gray-500 md:px-50 mb-3">The barn house captivates with its blend of rustic charm and modern
+                sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space
+                with natural light.</p>
+            <button class="btn text-primary opacity-80 text-black font-bold text-xl rounded-full">View Details<i
+                    class="fa-solid fa-arrow-right bg-yellow-400 text-gray-700 text-black -rotate-45 rounded-full "></i></button>
+        </section>
     </header>
     <main>
-
+        <!-- About section -->
+        <section class="flex flex-col md:flex-row items-center bg-gray-200 gap-10 px-5 md:px-20 py-10">
+            <div class="md:w-1/2 space-y-4">
+                <div class="md:-ml-10 border border-dashed w-30 py-4">
+                    <img src="./assets/Vector.png" alt="">
+                </div>
+                <button class="btn font-bold text-xl rounded-full bg-white"><i class="fa-solid fa-arrow-right"></i>About
+                    Us</button>
+                <h2 class="text-xl md:text-5xl font-bold">We design thoughtful, <br>liveable spaces</h2>
+                <p class="text-gray-500">
+                    The team focuses each site with the blend of natural charm and modern sophistication...
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 shadow-sm bg-white rounded-lg">
+                        <div class="bg-base-200 p-3 rounded">
+                            <img src="./assets/commercial.png" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Commercial</h4>
+                            <p class="text-sm text-gray-500">Modern office and commercial design</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 shadow-sm  bg-white rounded-lg">
+                        <div class="bg-base-200 p-3 rounded">
+                            <img src="./assets/residential.png" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Residential</h4>
+                            <p class="text-sm text-gray-500">Custom homes that balance form and function</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="./assets/Rectangle.png" class="rounded-lg shadow-lg" alt="Residential House">
+            </div>
+        </section>
     </main>
     <footer>
 
