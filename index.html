@@ -87,13 +87,16 @@
     </header>
     <main>
         <!-- About section -->
-        <section class="flex flex-col md:flex-row items-center bg-gray-200 gap-10 px-5 md:px-20 py-10">
+        <section class="flex flex-col md:flex-row md:items-center bg-gray-200 gap-10 px-5 md:px-20 py-10">
             <div class="md:w-1/2 space-y-4">
-                <div class="md:-ml-10 border border-dashed w-30 py-4">
+                <div class="md:-ml-10 border border-dashed w-30 py-4 ">
                     <img src="./assets/Vector.png" alt="">
                 </div>
-                <button class="btn font-bold text-xl rounded-full bg-white"><i class="fa-solid fa-arrow-right"></i>About
-                    Us</button>
+                <div class="items-center">
+                    <button class="btn font-bold text-xl rounded-full bg-white"><i
+                            class="fa-solid fa-arrow-right"></i>About
+                        Us</button>
+                </div>
                 <h2 class="text-xl md:text-5xl font-bold">We design thoughtful, <br>liveable spaces</h2>
                 <p class="text-gray-500">
                     The team focuses each site with the blend of natural charm and modern sophistication...
@@ -121,6 +124,67 @@
             </div>
             <div class="md:w-1/2">
                 <img src="./assets/Rectangle.png" class="rounded-lg shadow-lg" alt="Residential House">
+            </div>
+        </section>
+
+        <!-- Statistics card Review -->
+        <section class="bg-gray-200 py-20">
+            <div
+                class="grid grid-cols-1 md:grid-cols-4 text-center py-10 px-5 md:px-20 gap-5 md:gap-4 md:w-4/5 shadow-lg md:mx-auto bg-white rounded-lg">
+                <div>
+                    <i class="fa-regular fa-message"></i>
+                    <h2 class="font-bold text-4xl text-gray-700">235+</h2>
+                    <p class="text-xl font-semibold text-gray-500">Happy Client Review</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-dropbox"></i>
+                    <h2 class="font-bold text-4xl text-gray-700">50+</h2>
+                    <p class="text-xl font-semibold text-gray-500">Work Departments</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-group"></i>
+                    <h2 class="font-bold text-4xl text-gray-700">30K+</h2>
+                    <p class="text-xl font-semibold text-gray-500">Our Happy Client</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person"></i>
+                    <h2 class="font-bold text-4xl text-gray-700">307+</h2>
+                    <p class="text-xl font-semibold text-gray-500">Staff Members</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- work section -->
+        <section class="px-5 md:px-20 py-10 text-center bg-gray-200">
+            <button class="btn rounded-full bg-white mb-5"><i class="fa-solid fa-arrow-right"></i>How we work</button>
+            <h2 class="text-2xl md:text-3xl font-bold mb-5">Our Works Process</h2>
+            <p class="text-gray-500 mb-5 md:w-1/2 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <!-- work cards -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-start">
+                <!-- card-01 -->
+                <div class="bg-pink-200 p-5 rounded-lg ">
+                    <img class="mb-5" src="./assets/concept.png" alt="">
+                    <h4 class="font-bold text-lg mb-2">Concept</h4>
+                    <p class="text-sm">The architects brainstorm and develop a concept based on site research.</p>
+                </div>
+                <!-- card-02 -->
+                <div class="bg-yellow-200 p-5 rounded-lg">
+                    <img class="mb-5" src="./assets/flow-chart.png" alt="">
+                    <h4 class="font-bold text-lg mb-2">Design Process</h4>
+                    <p class="text-sm">Creation of drawings and digital visuals to shape ideas and vision.</p>
+                </div>
+                <!-- card-03 -->
+                <div class="bg-teal-200 p-5 rounded-lg">
+                    <img class="mb-5" src="./assets/vision.png" alt="">
+                    <h4 class="font-bold text-lg mb-2">Supervision</h4>
+                    <p class="text-sm">Project execution with strict quality and deadline supervision.</p>
+                </div>
+                <!-- card-04 -->
+                <div class="bg-blue-300 p-5 rounded-lg">
+                    <img class="mb-5" src="./assets/budget-planning.png" alt="">
+                    <h4 class="font-bold text-lg mb-2">Budget Planning</h4>
+                    <p class="text-sm">Accurate cost estimates and financial strategies for optimal execution.</p>
+                </div>
             </div>
         </section>
     </main>
